@@ -41,16 +41,19 @@ const App = () => {
   return (
     <div>
       <div className="input">
-        <input
-          value={name}
-          placeholder=""
-          // 인풋 이벤트로 들어온 입력 값을 name의 값으로 업데이트
-          onChange={(e) => setName(e.target.value)}
-        />
+        <div>
+          <input
+            value={name}
+            placeholder=""
+            // 인풋 이벤트로 들어온 입력 값을 name의 값으로 업데이트
+            onChange={(e) => setName(e.target.value)}
+          />
 
-        <CustomButton onClick={addUserHandler}>추가하기</CustomButton>
-
-        <h2>ToDo List</h2>
+          <CustomButton onClick={addUserHandler}>추가하기</CustomButton>
+        </div>
+        <div>
+          <h2>ToDo List</h2>
+        </div>
       </div>
 
       <div className="app-style">
