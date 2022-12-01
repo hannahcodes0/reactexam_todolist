@@ -51,9 +51,10 @@ const App = () => {
 
           <CustomButton onClick={addUserHandler}>추가하기</CustomButton>
         </div>
-        <div>
-          <h2>ToDo List</h2>
-        </div>
+      </div>
+
+      <div className="todo">
+        <h2>ToDo List</h2>
       </div>
 
       <div className="app-style">
